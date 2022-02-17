@@ -471,24 +471,14 @@ You should install Ma">
 <blockquote>
 <p>You should install MarkDown All in one .</p>
 </blockquote>
-<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><blockquote>
-<p>标题要用 # 这个符号，下级标题要使用多一个 # .</p>
-</blockquote>
-<blockquote>
-<p>注意符号和内容之间有空格</p>
-</blockquote>
-<h3 id="菜单"><a href="#菜单" class="headerlink" title="菜单"></a>菜单</h3><blockquote>
-<p>菜单用 - 或 * 符号都可以</p>
-</blockquote>
-<blockquote>
-<p>注意符号和内容之间有空格</p>
-</blockquote>
-<blockquote>
-<p>可以空两格实现多级菜单</p>
-</blockquote>
+<h3 id="1、标题"><a href="#1、标题" class="headerlink" title="1、标题"></a>1、标题</h3><p> 标题要用 #+空格+文字，每下一级标题要使用多一个 # .</p>
+<p> 注意符号和内容之间有空格 .</p>
+<h3 id="2、菜单"><a href="#2、菜单" class="headerlink" title="2、菜单"></a>2、菜单</h3><p> 菜单用 - 或 * 符号都可以 .</p>
+<p>注意符号和内容之间有空格 .</p>
+<p>可以空两格实现多级菜单 .</p>
 <p>具体语法为：</p>
-<p>*+空格+内容一</p>
-<p>-+空格+内容二</p>
+<p>*+空格+内容一 .</p>
+<p>-+空格+内容二 .</p>
 <p>效果如下</p>
 <ul>
 <li>内容一 <ul>
@@ -505,8 +495,62 @@ You should install Ma">
 </ul>
 </li>
 </ul>
-<p><strong>粗体字</strong>的语法是：** + 你的文字 + ** .</p>
-<p><em>斜体字</em>的语法是：* + 你的文字 + * .</p>
+<h3 id="3、引用"><a href="#3、引用" class="headerlink" title="3、引用"></a>3、引用</h3><p>语法是 &gt;+空格+你的文字 .</p>
+<blockquote>
+<p>这是一个引用 .</p>
+</blockquote>
+<h3 id="4、粗体和斜体"><a href="#4、粗体和斜体" class="headerlink" title="4、粗体和斜体"></a>4、粗体和斜体</h3><p><strong>粗体字</strong>的语法是：**  你的文字  ** .</p>
+<p><em>斜体字</em>的语法是：*  你的文字  * .(没有空格)</p>
+<h3 id="5、高亮强调"><a href="#5、高亮强调" class="headerlink" title="5、高亮强调"></a>5、高亮强调</h3><p><code>注意：</code><br><code>you need to be careful .</code></p>
+<p>语法是在两个 &#96; 之间写上文字，这个符号通常位于esc按键下方 .</p>
+<h3 id="6、代码高亮"><a href="#6、代码高亮" class="headerlink" title="6、代码高亮"></a>6、代码高亮</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    cout&lt;&lt;&quot;hello world&quot;&lt;&lt;endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>语法是在六个&#96;之间写上文字</p>
+<h3 id="7、链接"><a href="#7、链接" class="headerlink" title="7、链接"></a>7、链接</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/">这是bilibili的网站</a></p>
+<p>语法是：[描述]+(你的链接)</p>
+<h3 id="8、插入图片"><a href="#8、插入图片" class="headerlink" title="8、插入图片"></a>8、插入图片</h3><p>语法：!+[图片描述]+(图片链接)</p>
+<p>百度图床可以找到很多免费上传的网站（不建议）</p>
+<p><img src="https://s3.bmp.ovh/imgs/2022/02/a4b8764f3d518b69.jpg"></p>
+<h3 id="9、插入分割线"><a href="#9、插入分割线" class="headerlink" title="9、插入分割线"></a>9、插入分割线</h3><p>语法是三个连续的*</p>
+<hr>
+<p>就像这样</p>
+<hr>
+<hr>
+<hr>
+<h3 id="9、插入视频"><a href="#9、插入视频" class="headerlink" title="9、插入视频"></a>9、插入视频</h3><p>以bilibili为例，最简单的办法就是粘贴嵌入代码</p>
+<iframe src="//player.bilibili.com/player.html?aid=675151445&bvid=BV1mU4y1j72n&cid=399502211&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<h3 id="10、表格"><a href="#10、表格" class="headerlink" title="10、表格"></a>10、表格</h3><table>
+<thead>
+<tr>
+<th>按键</th>
+<th align="center">功能</th>
+<th align="right">高端的程序员</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ctrl+A</td>
+<td align="center">全选</td>
+<td align="right">往往使用</td>
+</tr>
+<tr>
+<td>Ctrl+C</td>
+<td align="center">复制</td>
+<td align="right">最朴素的</td>
+</tr>
+<tr>
+<td>Ctrl+V</td>
+<td align="center">粘贴</td>
+<td align="right">编程方式</td>
+</tr>
+</tbody></table>
+<p>第一行写成这样： |内容|内容|</p>
+<p>第二行这样  | — | :—-: | —-:|</p>
+<p>与横线数量无关，不写冒号默认居左，两侧冒号居中，右侧冒号居右</p>
+<p>虽然写起来可能杂乱，但是编译结果显示的是一张整齐的表格</p>
+<blockquote>
+<p>基础的语法就这些啦~</p>
+</blockquote>
 
                 
             </div>
